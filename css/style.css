@@ -474,19 +474,25 @@ body {
   min-height: 100%;
   overflow-wrap: break-word;
 }
-.content p {
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+p {
   hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
 }
-.content code {
+code {
   hyphens: manual;
   -moz-hyphens: manual;
   -ms-hyphens: manual;
   -webkit-hyphens: manual;
 }
-.content a {
+a {
   color: #363533;
   text-decoration: none;
   background-image: linear-gradient(transparent, transparent 5px, #363533 5px, #363533);
@@ -494,44 +500,44 @@ body {
   background-size: 100% 6px;
   background-repeat: repeat-x;
 }
-.content a:hover {
+a:hover {
   background-image: linear-gradient(transparent, transparent 4px, #2bbc8a 4px, #2bbc8a);
 }
-.content a.icon {
+a.icon {
   background: none;
 }
-.content a.icon:hover {
+a.icon:hover {
   color: #2bbc8a;
 }
-.content h1 a,
-.content .h1 a,
-.content h2 a,
-.content h3 a,
-.content h4 a,
-.content h5 a,
-.content h6 a {
+h1 a,
+.h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   background: none;
   color: inherit;
   text-decoration: none;
 }
-.content h1 a:hover,
-.content .h1 a:hover,
-.content h2 a:hover,
-.content h3 a:hover,
-.content h4 a:hover,
-.content h5 a:hover,
-.content h6 a:hover {
+h1 a:hover,
+.h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
   background-image: linear-gradient(transparent, transparent 6px, #2bbc8a 6px, #2bbc8a);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
 }
-.content h6 a {
+h6 a {
   background: none;
   color: inherit;
   text-decoration: none;
 }
-.content h6 a:hover {
+h6 a:hover {
   background-image: linear-gradient(transparent, transparent 6px, #2bbc8a 6px, #2bbc8a);
   background-position: bottom;
   background-size: 100% 6px;
@@ -599,8 +605,6 @@ body {
   border-radius: 5px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
 }
 #header #nav {
   color: #d44375;
